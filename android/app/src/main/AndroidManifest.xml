@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pintitionr">
    <application
-        android:label="pintitionr"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Pintitionr"
+        android:icon="@mipmap/pinnr">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -37,5 +37,8 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" /> />
     </application>
 </manifest>
