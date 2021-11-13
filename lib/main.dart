@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MapScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -39,13 +40,15 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   static const initialCam = CameraPosition(
+
     target: LatLng(28.6024,-81.2001),
-    zoom: 17.5,
+    zoom: 15.5,
   );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: GoogleMap(
+        mapType: MapType.hybrid,
         myLocationButtonEnabled: false,
         zoomControlsEnabled: false,
         initialCameraPosition: initialCam,
