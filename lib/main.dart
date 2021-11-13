@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-Future<void> main() async {
-  await dotenv.load();
+ main() async {
   runApp(const MyApp());
 }
 
@@ -41,7 +39,7 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   static const initialCam = CameraPosition(
-    target: LatLng(37.773972,-122.431297),
+    target: LatLng(28.6024,-81.2001),
     zoom: 17.5,
   );
   @override
